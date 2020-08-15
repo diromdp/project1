@@ -42,7 +42,7 @@ const compose = (plugins) => ({
   },
 
   // Setting a custom build directory & build id
-  distDir: isProd ? 'build' : 'build-dev',
+  distDir: 'build',
   generateBuildId: () => nextBuildId({ dir: __dirname, describe: true }),
 
   // Disabling x-powered-by in response headers
